@@ -12,13 +12,14 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
-  def create = Product.new(product_params)
+  def create
+    @product = Product.new(product_params)
     @product.save
   end
 
   private
   
   def product_params
-    params.required(:product).permit(:descrpition, :quantity, :price)
+    params.required(:product).permit(:description, :quantity, :price)
   end
 end
