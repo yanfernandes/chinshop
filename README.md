@@ -1,24 +1,15 @@
-# README
+## Chinshop
+Ecommerce de ração gourmet para Chinchilas. A aplicação tem um usuário apenas com permissão de cadastro de produtos e outro usuário com função de administrador.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Como criar usuário com função admin
 
-Things you may want to cover:
+Rails console
+```bash
+rails c
+```
 
-* Ruby version
+Cadastrar novo usuário
+```bash
+User.create(email: "jonh@wick.com", password:"123456", admin: true)
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
