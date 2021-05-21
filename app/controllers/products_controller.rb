@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
-  def edit
+  def show
     @product = Product.find(params[:id])
   end
 
