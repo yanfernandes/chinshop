@@ -1,16 +1,86 @@
-<div class="container mt-4">
-  <div class="text-center">
-    <div>
-      
-      <h4>Olá, <%= current_user.email %></h4>
-      <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-info" %>
-    </div>
-    
-    <div>
-      <h1>ChinShop</h1> 
-      <%= link_to 'Cadastrar produto', new_product_path, class: "btn btn-info" %>
-      <%= link_to 'Listar usuários', users_path, class: "btn btn-info" %>
-      <%= link_to 'Criar usuário', new_user_path, class: "btn btn-info" %>
+<body>
+  <div class="site-section site-portfolio">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" >
+          <h2>ChinShop</h2>
+          <p class="mb-0">Rações gourmet para Chinchilas</p>
+          <%= link_to 'Área de acesso', dashboard_index_path %>
+        </div>
+      </div>
+
+      <div id="portfolio-grid" class="row no-gutter"  >
+        <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a href="work-single.html" class="item-wrap fancybox">
+            <div class="work-info">
+              <h3>Ração</h3>
+              <span>R$25,00</span>
+            </div>
+            <%= image_tag 'img_1.jpg' %>
+          </a>
+        </div>
+
+        <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a href="work-single.html" class="item-wrap fancybox">
+            <div class="work-info">
+              <h3>Item 2</h3>
+              <span>R$ 0,00</span>
+            </div>
+            <%= image_tag 'img_2.jpg' %>
+          </a>
+        </div>
+
+        <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a href="work-single.html" class="item-wrap fancybox">
+            <div class="work-info">
+              <h3>Item 3</h3>
+              <span>R$ 0,00</span>
+            </div>
+            <%= image_tag 'img_2.jpg' %>
+          </a>
+        </div>
+
+        <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a href="work-single.html" class="item-wrap fancybox">
+            <div class="work-info">
+              <h3>Item 4</h3>
+              <span>R$ 0,00</span>
+            </div>
+            <%= image_tag 'img_2.jpg' %>
+          </a>
+        </div>
+
+        <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a href="work-single.html" class="item-wrap fancybox">
+            <div class="work-info">
+              <h3>Item 5</h3>
+              <span>R$ 0,00</span>
+            </div>
+            <%= image_tag 'img_2.jpg' %>
+          </a>
+        </div>
+
+        <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+          <a href="work-single.html" class="item-wrap fancybox">
+            <div class="work-info">
+              <h3>Item 6</h3>
+              <span>R$ 0,00</span>
+            </div>
+            <%= image_tag 'img_2.jpg' %>
+          </a>
+        </div>
+        
+      </div>
     </div>
   </div>
-</div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">ChinShop é o primeiro ecommerce para Chinchilas do Brasil</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
