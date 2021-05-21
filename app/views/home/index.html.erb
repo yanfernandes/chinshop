@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <div class="text-center">
+    <div>
+      
+      <h4>Olá, <%= current_user.email %></h4>
+      <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-info" %>
+    </div>
+    
+    <div>
+      <h1>ChinShop</h1> 
+      <%= link_to 'Cadastrar produto', new_product_path, class: "btn btn-info" %>
+      <%= link_to 'Listar usuários', users_path, class: "btn btn-info" %>
+      <%= link_to 'Criar usuário', new_user_path, class: "btn btn-info" %>
+    </div>
+  </div>
+</div>

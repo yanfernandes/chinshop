@@ -1,0 +1,21 @@
+<%= form_with(model: @product, local: true) do |f| %>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <form>
+        <div class="form-group">
+          <%= f.text_field :description, class: "form-control mb-4", placeholder: 'Descrição', required: true %>
+          <%= f.text_field :quantity, class: "form-control mb-4", placeholder: 'Quantidade', required: true %>
+          <%= f.text_field :price, class: "form-control mb-4", placeholder: 'Preço', required: true %>
+        </div>
+        <div class="text-center">
+          <%= f.submit "Enviar", class: "btn btn-info" %>
+          <%= link_to 'Voltar', root_path, class:"btn btn-info" %>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<% end %>
